@@ -1,0 +1,303 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+/*Wrap all pages content without any rules, avoid horizontal scroll / Better feeling on mobile devices*/
+
+body {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*Larger grid */
+
+@media (max-width: 766px) {
+    .w-col {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.w-select {
+    cursor: pointer;
+    color: #9d9d9d;
+    background-image: none;
+    /*Get rid of webflow gradient on select form */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0px 12px 0px 25px;
+    min-height: 50px;
+}
+
+.select-wrapper:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    width: 11px;
+    height: 16px;
+    pointer-events: none;
+    background: url("https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/59cbc6c24c2e3f0001507781_off.svg") no-repeat center center;
+}
+
+@media (max-width: 480px) {
+    .w-select {
+        padding: 0px 12px 0px 15px !important;
+    }
+}
+
+.w-select:hover {
+    background-image: none;
+    /*Get rid of webflow gradient on select form */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+textarea.resize-v {
+    resize: vertical;
+}
+
+textarea,
+input[type="email"],
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 5px;
+}
+
+.w-input {
+    height: auto !important;
+}
+
+.w-input:focus,
+.w-select:focus {
+    border-color: #d3d3da;
+    outline: none;
+}
+
+/* Typer cursor custom */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-cursor {
+    color: #373cf1;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+.cc-revoke {
+    display: none !important;
+}
+
+/* Add global styling that Webflow can't do */
+.heading.small,
+.heading.medium {
+    position: relative;
+}
+
+.heading.small:before,
+.heading.medium:before {
+    content: "—";
+    position: absolute;
+    left: -2em;
+}
+
+@media screen and (max-width: 991px) {
+
+    .heading.small:before,
+    .heading.medium:before {
+        content: "";
+    }
+}
+
+.heading-dashless:before {
+    content: "" !important;
+}
+
+.manual-internal-link.list-item {
+    list-style-type: "→";
+}
+
+.shortcut__key.command:after {
+    content: "⌘";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    line-height: 1em;
+    font-size: 14px;
+}
+
+.shortcut__key.option:after {
+    content: "⌥";
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    line-height: 1em;
+    font-size: 9px;
+}
+
+.shortcut__key.shift:after {
+    content: "⇧";
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    line-height: 1em;
+    font-size: 10px;
+}
+
+.touch-device .pointer-device-only {
+    display: none !important;
+}
+
+.touch-device .touch-device-only {
+    display: block !important;
+}
+
+
+.cc-window {
+    background-color: #fff !important;
+    border-radius: 5px !important;
+    width: 290px !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.15) !important;
+    overflow: visible !important;
+    font-family: "Open Sans", sans-serif !important;
+    left: 15px !important;
+    bottom: 15px !important;
+    transition: 0.5s opacity, 0.5s visibility !important;
+}
+
+.cc-invisible {
+    visibility: hidden;
+}
+
+.cc-message {
+    color: #535358;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0 !important;
+    border-right: 1px solid #e9e9f0;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 12px 18px !important;
+    line-height: 1.6 !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: user-select;
+    cursor: default !important;
+}
+
+.cc-compliance {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100px;
+}
+
+.cc-btn {
+    margin: 0 !important;
+    background-color: #fff !important;
+    color: #9b9ca6 !important;
+    font-weight: normal !important;
+    font-size: 12px;
+    font-family: "Open Sans";
+    padding: 0 !important;
+    border: 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: transparent !important;
+    outline: 0 !important;
+    transition: background-color 0.2s;
+}
+
+.cc-btn:first-child {
+    border-bottom-right-radius: 5px;
+}
+
+.cc-btn:last-child {
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #e9e9f0 !important;
+}
+
+.cc-btn:hover {
+    background-color: #f8f8f8 !important;
+    text-decoration: none !important;
+    color: #9b9ca6 !important;
+}
+
+.cc-btn:focus,
+.cc-btn:active {
+    text-decoration: none !important;
+}
+
+@media (min-width: 23.4375em) {
+    .cc-window {
+        left: 20px !important;
+        bottom: 20px !important;
+        width: 330px !important;
+    }
+
+    .cc-message {
+        padding: 20px !important;
+    }
+}
+
+@media (min-width: 36em) {
+    .cc-window {
+        left: 48px !important;
+        bottom: 48px !important;
+    }
+}
+
+
+/* Bordered form */
+form {
+    border: 0px solid #f1f1f1;
+    width: 50%;
+    align-content: center;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
