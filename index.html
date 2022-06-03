@@ -1,1 +1,738 @@
-Hello, world
+<!DOCTYPE html><!-- Last Published: Sun Mar 14 2021 19:18:20 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="www.centrol.io" data-wf-page="5f326ba144764e15ec29bcd6" data-wf-site="59c3a820387ac60001b24d4d">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Trade without emotions | Centrol.io</title>
+    <meta content="Take control of your portfolio. Trade without emotions using Centrol." name="description" />
+    <meta content="Trade without emotions | Centrol.io" property="og:title" />
+    <meta content="Take control of your portfolio. Trade without emotions using Centrol." property="og:description" />
+    <meta content="https://res.cloudinary.com/centrol-io/image/upload/v1645651239/site_assets/Centrol_-_Link_Preview_bo3cvs.png" property="og:image" />
+    <meta content="Trade without emotions | Centrol.io" property="twitter:title" />
+    <meta content="Take control of your portfolio. Trade without emotions using Centrol." property="twitter:description" />
+    <meta content="https://res.cloudinary.com/centrol-io/image/upload/v1645651239/site_assets/Centrol_-_Link_Preview_bo3cvs.png" property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- TODO: Remember to remove the . before the /style.css below before committing/building the website -->
+    <link href="https://centrol-io.github.io/common-scripts/site_style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Inconsolata:400,700",
+                    "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Inter:regular,500",
+                    "IBM Plex Mono:regular"
+                ]
+            }
+        });
+    </script>
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+    <script type="text/javascript">
+        ! function(o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className +=
+                t + "touch")
+        }(window, document);
+    </script>
+    <link href="https://res.cloudinary.com/centrol-io/image/upload/v1654054953/Logos/App_Icon_df3ea1.svg" rel="shortcut icon" type="image/x-icon" />
+    <link href="hhttps://res.cloudinary.com/centrol-io/image/upload/v1654054953/Logos/App_Icon_df3ea1.svg" rel="apple-touch-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="https://cdn.rawgit.com/hellogerard/jquery.typer.js/pr-1/src/jquery.typer.js"></script>
+
+    <script>
+        $.noConflict();
+        jQuery(document).ready(function($) {
+            $('[data-typer-targets]').typer();
+        });
+    </script>
+
+    <style>
+        html {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /*Wrap all pages content without any rules, avoid horizontal scroll / Better feeling on mobile devices*/
+
+        body {
+            position: relative;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        /*Larger grid */
+
+        @media (max-width:766px) {
+            .w-col {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+
+        .w-select {
+            cursor: pointer;
+            color: #9D9D9D;
+            background-image: none;
+            /*Get rid of webflow gradient on select form */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            padding: 0px 12px 0px 25px;
+            min-height: 50px;
+        }
+
+        .select-wrapper:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 16px;
+            width: 11px;
+            height: 16px;
+            pointer-events: none;
+            background: url("https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/59cbc6c24c2e3f0001507781_off.svg") no-repeat center center;
+        }
+
+        @media (max-width: 480px) {
+            .w-select {
+                padding: 0px 12px 0px 15px !important;
+            }
+        }
+
+        .w-select:hover {
+            background-image: none;
+            /*Get rid of webflow gradient on select form */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        textarea.resize-v {
+            resize: vertical;
+        }
+
+        textarea,
+        input[type="email"],
+        input[type="text"],
+        input[type="button"],
+        input[type="submit"] {
+            -webkit-appearance: none;
+            border-radius: 5px;
+        }
+
+        .w-input {
+            height: auto !important;
+        }
+
+        .w-input:focus,
+        .w-select:focus {
+            border-color: #d3d3da;
+            outline: none;
+        }
+
+        /* Typer cursor custom */
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .typed-cursor {
+            color: #373cf1;
+            opacity: 1;
+            animation: blink .7s infinite;
+        }
+
+        .cc-revoke {
+            display: none !important;
+        }
+    </style>
+
+    <!-- Add global styling that SideEditor can't do -->
+    <style>
+        .heading.small,
+        .heading.medium {
+            position: relative;
+        }
+
+        .heading.small:before,
+        .heading.medium:before {
+            content: "—";
+            position: absolute;
+            left: -2em;
+        }
+
+        @media screen and (max-width: 991px) {
+
+            .heading.small:before,
+            .heading.medium:before {
+                content: "";
+            }
+        }
+
+        .heading-dashless:before {
+            content: "" !important;
+        }
+
+        .manual-internal-link.list-item {
+            list-style-type: "→";
+        }
+
+        .shortcut__key.command:after {
+            content: "⌘";
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            line-height: 1em;
+            font-size: 14px;
+        }
+
+        .shortcut__key.option:after {
+            content: "⌥";
+            position: absolute;
+            top: 5px;
+            right: 4px;
+            line-height: 1em;
+            font-size: 9px;
+        }
+
+        .shortcut__key.shift:after {
+            content: "⇧";
+            position: absolute;
+            top: 5px;
+            right: 4px;
+            line-height: 1em;
+            font-size: 10px;
+        }
+
+        .touch-device .pointer-device-only {
+            display: none !important;
+        }
+
+        .touch-device .touch-device-only {
+            display: block !important;
+        }
+    </style>
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TLBWCW5');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Force opengraph data for Facebook -->
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="https://www.centrol.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Trade without emotions" />
+    <meta property="og:image" content="https://res.cloudinary.com/centrol-io/image/upload/v1654054953/Logos/App_Icon_df3ea1.svg" />
+
+    <!-- Force opengraph data for Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@centrol_io" />
+    <meta name="twitter:creator" content="@centrol_io" />
+    <meta property="og:url" content="https://www.centrol.io/" />
+    <meta property="og:title" content="Centrol.io" />
+    <meta property="og:description" content="Trade without emotions" />
+    <meta property="og:image" content="https://res.cloudinary.com/centrol-io/image/upload/v1654054953/Logos/App_Icon_df3ea1.svg" />
+
+    <!-- Apple device icon game -->
+    <link rel="apple-touch-icon" sizes="152x152" href="https://res.cloudinary.com/centrol-io/image/upload/v1652993398/Logos/Centrol_-_Logo_-_Clean_White_bg_xo3siu.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/centrol-io/image/upload/v1652993398/Logos/Centrol_-_Logo_-_Clean_White_bg_xo3siu.png">
+
+
+</head>
+
+<body>
+    <div data-collapse="medium" data-animation="default" data-duration="250" role="banner" class="header--nav w-nav">
+        <div class="container nav"><a href="/" aria-current="page" class="nav-logo w-nav-brand w--current"><img src="https://res.cloudinary.com/centrol-io/image/upload/v1652993398/Logos/Centrol_-_Logo_-_Clean_White_bg_xo3siu.png" alt="Centrol Logo" width="180" class="nav-logo-image" />
+                <div class="logo-mark">Centrol.io</div>
+            </a>
+            <nav role="navigation" class="nav-links w-nav-menu">
+                <a href="/product" class="nav-link w-nav-link">Products</a>
+                <a href="/pricing" class="nav-link w-nav-link">Docs</a>
+                <a href="/careers" class="nav-link w-nav-link">Community</a>
+                <a href="/about" class="nav-link w-nav-link">Pricing</a>
+                <a href="/get-started" data-download="true" class="nav-link nav-link-primary w-nav-link">Get started</a>
+            </nav>
+            <div class="nav-button w-nav-button">
+                <div class="icon w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="section">
+        <div data-brackets-id="1652" class="typed-text-block">
+            <h1 data-brackets-id="1653" class="heading text-gradient-1">Trade while
+                <span class="text-gradient-1 typed-text">living life</span>
+            </h1>
+        </div>
+
+        <!-- TODO: [CENTROL-112] Update the base image here of the product -->
+        <div class="centrol-app--header-demo">
+            <div class="centrol-app--demo-app demo-app--header w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5a9dd149146734000172539f_view-1.png" sizes="100vw" srcset="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5a9dd149146734000172539f_view-1-p-500.png 500w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5a9dd149146734000172539f_view-1-p-800.png 800w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5a9dd149146734000172539f_view-1-p-1080.png 1080w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5a9dd149146734000172539f_view-1-p-1600.png 1600w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5a9dd149146734000172539f_view-1-p-2000.png 2000w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5a9dd149146734000172539f_view-1.png 4800w" alt="" /></div>
+            <div class="centrol-app--wrapper centrol-app--header">
+                <div data-w-id="3b269ff3-a8da-d62e-1045-92b57a1c58ec" style="opacity:1" class="centrol-app__main-ui">
+                    <div class="centrol-app__window-buttons">
+                        <div class="centrol-app--window-button window-button--close"></div>
+                        <div class="centrol-app--window-button window-button--minimize"></div>
+                        <div class="centrol-app--window-button window-button--maximize"></div>
+                    </div>
+                    <div class="centrol-app--actions">
+                        <div class="centrol-app--app-action"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5aa047bfeaeba10001794bbf_icon-left.svg" height="16" alt="" class="centrol-app--action--icon" />
+                            <div class="centrol-app--action--text w-hidden-tiny">Back</div>
+                        </div>
+                        <div class="centrol-app--composer--title w-hidden-tiny">Compose</div>
+                        <div class="centrol-app--app--actions--right-wrapper">
+                            <div class="centrol-app--app-action">
+                                <div class="centrol-app--action--text w-hidden-tiny">VIP</div>
+                            </div>
+                            <div class="centrol-app--app-action"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5aa0173ee9d7490001600907_icon-send.svg" height="16" alt="" class="centrol-app--action--icon" />
+                                <div class="centrol-app--action--text w-hidden-tiny">Send</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centrol-app-composer--top-lines">
+                        <div class="centrol-app--composer--line">
+                            <div class="centrol-app--composer--field w-hidden-tiny">
+                                <div class="centrol-app--email-content--off">To</div>
+                            </div>
+                            <div class="centrol-app--composer--content">
+                                <div class="centrol-app--email-content-on">all@mail.com</div>
+                            </div>
+                        </div>
+                        <div class="centrol-app--composer--line">
+                            <div class="centrol-app--composer--field w-hidden-tiny">
+                                <div class="centrol-app--email-content--off">From</div>
+                            </div>
+                            <div class="centrol-app--composer--content">
+                                <div class="centrol-app--email-content-on">team@yourcentrol.co</div>
+                            </div>
+                        </div>
+                        <div class="centrol-app--composer--line">
+                            <div class="centrol-app--composer--field w-hidden-tiny">
+                                <div class="centrol-app--email-content--off">Subject</div>
+                            </div>
+                            <div class="centrol-app--composer--content">
+                                <div class="centrol-app--email-content-on">Meet centrol</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="centrol-app--composer">
+                    <div class="centrol-app--composer--line">
+                        <div class="centrol-app--composer--field w-hidden-tiny">
+                            <div data-w-id="41c18f67-f97c-0d69-2a4e-a8e829b4ba12" style="opacity:1" class="centrol-app--email-content--off">Body</div>
+                        </div>
+                        <div class="centrol-app--composer--content content--body">
+                            <div class="centrol-app--typed-home"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-cta">
+            <div class="home-cta-button-box"><a href="/get-started" class="button cta w-inline-block">
+                    <div>Get started</div>
+                </a></div>
+            <div class="note">Get started with your 14-day free trial</div>
+        </div>
+    </header>
+
+
+
+
+    <div id="step-1" class="section top-border">
+        <div class="stack-spaced">
+            <div class="w-layout-grid grid">
+                <div id="w-node-e3b97b06-ea78-575f-112e-aea97bca834f-ec29bcd6">
+                    <h2 class="heading centered">Take control of your time<br /></h2>
+                </div>
+                <div id="w-node-_1c84666a-24db-d614-7ca5-51ebd0a25af5-ec29bcd6">
+                    <h3 class="heading small">Trade, when you want to<br /></h3>
+                </div>
+                <div id="w-node-e3b97b06-ea78-575f-112e-aea97bca8354-ec29bcd6">
+                    <p>centrol delivers all email in Batches around a customizable schedule, giving you control of when you get
+                        notified to sort through everything new.<br /></p>
+                    <p>Effortlessly sort your inbox, marking everything that needs your attention as To do, then archiving the
+                        rest.<br /></p>
+                </div>
+                <div id="w-node-e3b97b06-ea78-575f-112e-aea97bca835e-ec29bcd6">
+                    <ul role="list" class="hidden-on-small">
+                        <li>No more disruptive notifications</li>
+                        <li>New email delivered in Batches</li>
+                        <li>Fully customizable notification schedule</li>
+                        <li>Reply on the spot with Quick reply</li>
+                        <li>Unsubscribe to newsletters with one click</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container wide w-container"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eac84c074a1c6682e0e_centrol_email%402x.png" alt="Focus sort inbox feature in the centrol desktop email client" width="1178" sizes="(max-width: 479px) 93vw, 94vw" srcset="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eac84c074a1c6682e0e_centrol_email%402x-p-500.png 500w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eac84c074a1c6682e0e_centrol_email%402x-p-800.png 800w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eac84c074a1c6682e0e_centrol_email%402x-p-1080.png 1080w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eac84c074a1c6682e0e_centrol_email%402x.png 2356w" />
+            </div>
+        </div>
+    </div>
+    <div id="step-1" class="section no-top-padding">
+        <div class="stack-spaced">
+            <div class="w-layout-grid grid">
+                <div id="w-node-aaf4827a-9da1-fded-842c-391f34686fb1-ec29bcd6">
+                    <h3 class="heading small">Dedicated space for what&#x27;s important<br /></h3>
+                </div>
+                <div id="w-node-aaf4827a-9da1-fded-842c-391f34686fb5-ec29bcd6">
+                    <p>Everything marked as To do is set-aside, neatly stacked for a clearer overview of what&#x27;s important to
+                        you. Then just reply in your own time.<br /></p>
+                </div>
+                <div id="w-node-aaf4827a-9da1-fded-842c-391f34686fbc-ec29bcd6">
+                    <ul role="list" class="hidden-on-small">
+                        <li>Never lose track of important email</li>
+                        <li>Mark threads as VIP to get notified as soon as a new reply comes through</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container wide w-container"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eadd5fe278bb892de66_centrol_todo%402x.png" alt="Focus sort inbox feature in the centrol desktop email client" width="1178" sizes="(max-width: 479px) 93vw, 94vw" srcset="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eadd5fe278bb892de66_centrol_todo%402x-p-500.png 500w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eadd5fe278bb892de66_centrol_todo%402x-p-800.png 800w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eadd5fe278bb892de66_centrol_todo%402x-p-1080.png 1080w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290eadd5fe278bb892de66_centrol_todo%402x.png 2356w" />
+            </div>
+        </div>
+    </div>
+    <div class="section top-border">
+        <div class="w-layout-grid grid">
+            <div id="w-node-_3fb0e358-73df-db1a-3d59-378ebf9c73b0-ec29bcd6">
+                <p class="callout">centrol is yours – built for your focus, your flow, your privacy, your peace of mind, your
+                    centrol.</p>
+            </div>
+            <div id="w-node-_4005d6fc-eb51-5613-2137-5eb5d62731e2-ec29bcd6">
+                <div class="spinning-badge"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f27dd809472417f22f2c566_centrol_spinningtext%402x.png" width="70" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0DEG) skew(0, 0)" data-w-id="000e1c5d-36a7-accd-cd43-d91b47c456e9" id="w-node-_000e1c5d-36a7-accd-cd43-d91b47c456e9-ec29bcd6" alt="" class="spinning-badge__text" /><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f27dd80a46c92cc3ca3735b_temp_smiley%402x.png" width="70" id="w-node-f63fa28b-a91f-e4a6-033e-d03c8129c1d3-ec29bcd6" alt="" class="spinning-badge__smiley" /></div>
+            </div>
+        </div>
+    </div>
+    <div id="step-1" class="section top-border">
+        <div class="stack-spaced">
+            <div class="w-layout-grid grid">
+                <div id="w-node-e0f272c7-3905-cfc5-285c-d0d6d3b87a52-ec29bcd6">
+                    <h3 class="heading medium">Focus Mode: For when you need it<br /></h3>
+                </div>
+                <div id="w-node-e0f272c7-3905-cfc5-285c-d0d6d3b87a56-ec29bcd6">
+                    <p>centrol is designed to help you focus on the things that matter. When it&#x27;s time to respond to your To
+                        dos, enter Focus Mode and leisurely reply one by one, free from distractions.<br /></p>
+                </div>
+            </div>
+            <div class="container wide w-container"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290ead34747999b8e83ece_centrol_focusmode%402x.png" alt="Focus sort inbox feature in the centrol desktop email client" width="1178" sizes="(max-width: 479px) 93vw, 94vw" srcset="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290ead34747999b8e83ece_centrol_focusmode%402x-p-500.png 500w, https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f290ead34747999b8e83ece_centrol_focusmode%402x.png 2356w" />
+            </div>
+        </div>
+    </div>
+    <div id="step-1" class="section top-border">
+        <div class="stack-spaced">
+            <div class="w-layout-grid grid features">
+                <div id="w-node-c3c2abe8-014a-f434-7452-1901976ccd8a-ec29bcd6">
+                    <h3 class="heading centered">There is more to centrol...<br /></h3>
+                </div>
+                <div id="w-node-_04ab8e81-e7ff-3720-3196-f0632356db3e-ec29bcd6">
+                    <div id="w-node-_6ce91659-5c74-e759-b328-399622f638c4-22f638c4" class="feature__block">
+                        <div class="feature__heading-block"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f2801ed445a0dc11a758bff_icon-alarm.svg" width="24" alt="" class="feature__icon" />
+                            <h3 class="feature__heading">Reminders</h3>
+                            <div class="feature__highlight"></div>
+                        </div>
+                        <div class="div-block-3">
+                            <p class="feature__description">Something important, but now&#x27;s not the time? Set a Reminder to never
+                                forget an email, keeping your Inbox and your To do list clutter-free. Revisit them at any time via the
+                                Reminders tab.</p>
+                            <p class="feature__description"></p>
+                        </div>
+                        <div class="w-embed">
+                            <style>
+                                .feature__highlight:empty {
+                                    display: none;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div id="w-node-_8a47d64a-8bdc-d8c2-83eb-689e6f6676f2-ec29bcd6">
+                    <div id="w-node-_6ce91659-5c74-e759-b328-399622f638c4-22f638c4" class="feature__block">
+                        <div class="feature__heading-block"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f2801ed5c4db809583b5337_icon-markdown.svg" width="24" alt="" class="feature__icon" />
+                            <h3 class="feature__heading">Markdown</h3>
+                            <div class="feature__highlight"></div>
+                        </div>
+                        <div class="div-block-3">
+                            <p class="feature__description">No overly complicated editor options disrupting your focus. </p>
+                            <p class="feature__description">Simple and clean for a calmer, rewarding writing experience. </p>
+                        </div>
+                        <div class="w-embed">
+                            <style>
+                                .feature__highlight:empty {
+                                    display: none;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div id="w-node-_096216c2-f1dc-8e70-ed23-fb9e3c637cfe-ec29bcd6">
+                    <div id="w-node-_6ce91659-5c74-e759-b328-399622f638c4-22f638c4" class="feature__block">
+                        <div class="feature__heading-block"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f2801edea9ba613294d29ca_icon-windowlock.svg" width="24" alt="" class="feature__icon" />
+                            <h3 class="feature__heading">Privacy first</h3>
+                            <div class="feature__highlight"></div>
+                        </div>
+                        <div class="div-block-3">
+                            <p class="feature__description">Email is private, both in a personal and professional context. We do not
+                                have access to your mail; we simply supply the tool for you to manage it.</p>
+                            <p class="feature__description">You pay for centrol with money, not your personal data or information.</p>
+                        </div>
+                        <div class="w-embed">
+                            <style>
+                                .feature__highlight:empty {
+                                    display: none;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div id="w-node-fda35217-23fd-2710-be38-e10691ac8813-ec29bcd6">
+                    <div id="w-node-_6ce91659-5c74-e759-b328-399622f638c4-22f638c4" class="feature__block">
+                        <div class="feature__heading-block"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f2801ed4e0af7934c1b1122_icon-star.svg" width="24" alt="" class="feature__icon" />
+                            <h3 class="feature__heading">VIP threads</h3>
+                            <div class="feature__highlight"></div>
+                        </div>
+                        <div class="div-block-3">
+                            <p class="feature__description">Waiting for an important reply from a client, lecturer...friend?</p>
+                            <p class="feature__description">Mark a thread as VIP and get notified instantly when a reply hits your
+                                inbox.</p>
+                        </div>
+                        <div class="w-embed">
+                            <style>
+                                .feature__highlight:empty {
+                                    display: none;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div id="w-node-ea5364d7-355f-2660-20ce-e46f10ae8bde-ec29bcd6">
+                    <div id="w-node-_6ce91659-5c74-e759-b328-399622f638c4-22f638c4" class="feature__block">
+                        <div class="feature__heading-block"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f2801ed5e5f024968839157_icon-mobilephone.svg" width="24" alt="" class="feature__icon" />
+                            <h3 class="feature__heading">Mobile</h3>
+                            <div class="feature__highlight">coming soon</div>
+                        </div>
+                        <div class="div-block-3">
+                            <p class="feature__description">Always on and instantly available, at the office, as well as at home with
+                                friends or family. In our opinion, email on mobile needs to be rethought.</p>
+                            <p class="feature__description">Don’t expect your standard email app.</p>
+                        </div>
+                        <div class="w-embed">
+                            <style>
+                                .feature__highlight:empty {
+                                    display: none;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div id="w-node-_9ab497af-9180-d458-c600-05ce36f072c1-ec29bcd6"><a href="/product" class="owner-manual-link__block w-inline-block">
+                        <div>Take a look at the Owner’s Manual for more features</div>
+                        <div class="owner-manual-link__arrow">→</div>
+                    </a></div>
+            </div>
+            <div class="container wide w-container"></div>
+        </div>
+    </div>
+    <div class="section top-border">
+        <div class="w-layout-grid grid testimonials">
+            <h2 id="w-node-_1b6ee9c1-00da-2807-4fe9-3f07ed159d5b-ec29bcd6" class="heading medium">What others say</h2>
+            <div id="w-node-a9ea63b3-0206-c21a-b672-733f737880fb-ec29bcd6">
+                <div class="tweet">
+                    <div class="tweet-header"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/600c76a4c7218741b8bd5592_PixX_htk_400x400.png" alt="" class="twitter-avatar" />
+                        <div class="twitter-name-box">
+                            <div class="twitter-username">Mark Boulton<br /></div><a href="https://twitter.com/markboulton" class="twitter-handle">@markboulton</a>
+                        </div>
+                    </div>
+                    <div class="tweet-body">Just subscribed for a year for <br />@your__centrol. For me, a game-changing email
+                        client. After a couple of weeks use, it&#x27;s positively changed my behaviour with email unlike anything
+                        else I&#x27;ve tried. Plus, the design is just 👌</div><a href="https://twitter.com/markboulton/status/1339602392338157571" class="tweet-link">5:04 PM · Dec 17,
+                        2020</a>
+                </div>
+            </div>
+            <div id="w-node-_9c546fcd-9113-9496-1ac7-4118c6ea5837-ec29bcd6">
+                <div class="tweet">
+                    <div class="tweet-header"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/5f44f5b4574a59fe4248962f_wEOOoddk_400x400.jpg" alt="" class="twitter-avatar" />
+                        <div class="twitter-name-box">
+                            <div class="twitter-username">Jane Portman</div><a href="https://twitter.com/uibreakfast/" class="twitter-handle">@uibreakfast</a>
+                        </div>
+                    </div>
+                    <div class="tweet-body">Just discovered @your__centrol<br /> and it is sooooo good. As if someone read my mind
+                        on what email should look like (Superhuman didn&#x27;t). Plug-n-play with Gmail also great.</div><a href="https://twitter.com/uibreakfast/status/1229737885923934209" class="tweet-link">1:02 PM · Feb 18,
+                        2020</a>
+                </div>
+            </div>
+            <div id="w-node-bf25003b-a476-6fa3-c580-ab08544e05bb-ec29bcd6">
+                <div class="tweet">
+                    <div class="tweet-header"><img src="https://uploads-ssl.webflow.com/59c3a820387ac60001b24d4d/600c761a6b19a081073a9432_sGV0fdB5_400x400.jpg" alt="" class="twitter-avatar" />
+                        <div class="twitter-name-box">
+                            <div class="twitter-username">Michael Lee</div><a href="https://twitter.com/michaelsoolee" class="twitter-handle">@michaelsoolee</a>
+                        </div>
+                    </div>
+                    <div class="tweet-body">Paid for an annual subscription of <br />@your__centrol. No brainer as it helps keep
+                        email anxiety at bay + I can fly through my emails only when I want.<br /><br />If you use Gmail + drowning
+                        in email, give centrol a shot!</div><a href="https://twitter.com/michaelsoolee/status/1339617488611504129" class="tweet-link">6:04 PM · Dec 17, 2020</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section top-border bottom-padding-half">
+        <div class="w-layout-grid grid split">
+            <div id="w-node-af2b7d7f-c55e-492b-15a1-1e0ba95d8988-ec29bcd6" class="split-side relaxed-padding">
+                <h3 class="heading bottom-margin-medium">Start your centrol</h3>
+                <div class="bottom-margin-small">
+                    <p class="paragraph-narrow">Available for Mac – iOS &amp; Android coming soon.</p>
+                    <p class="paragraph-narrow">Supporting Gmail &amp; Google Apps. For now.</p>
+                </div><a href="/get-started" class="button cta download primary w-button">Get started</a>
+            </div>
+            <div class="divider-block"></div>
+            <div id="w-node-af2b7d7f-c55e-492b-15a1-1e0ba95d898c-ec29bcd6" class="split-side relaxed-padding">
+                <h3 class="price-home">€10/month</h3>
+                <p class="paragraph-narrow">Try centrol for free for 14 days. Afterwards centrol costs €10/month or €99/year.</p>
+                <p class="paragraph-narrow">We’re charging to keep the lights on without having to rely on ads, selling data, or
+                    eventually selling the company.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="section top-border">
+        <div class="container bottom-margin-large">
+            <div class="logo-mark">centrol</div>
+            <p class="note">Designed in Denmark<br />Built in Germany</p>
+        </div>
+        <div class="container bottom-margin-large">
+            <div class="w-layout-grid grid footer">
+                <div id="w-node-c8188fa9-9054-c9f9-52d9-31a0fd67dc1d-fd67dc0e">
+                    <h3 class="footer-heading">App</h3><a href="/product" class="footer-link">Product</a><a href="/pricing" class="footer-link">Pricing</a><a data-download="true" href="/get-started" class="footer-link">Get
+                        started</a>
+                </div>
+                <div id="w-node-c8188fa9-9054-c9f9-52d9-31a0fd67dc26-fd67dc0e">
+                    <h3 class="footer-heading">Company</h3><a href="/about" class="footer-link">About</a><a href="/about#team" class="footer-link">Team</a><a href="/careers" class="footer-link">Careers</a><a href="https://medium.com/slight-pause" target="_blank" class="footer-link">Blog</a>
+                </div>
+                <div id="w-node-e704fef8-be96-0829-3f96-08b6c9985cef-fd67dc0e">
+                    <h3 class="footer-heading">Support</h3><a href="mailto:onno@yourcentrol.co?subject=You&#x27;ve%20got%20mail" class="footer-link">Email us</a><a href="https://airtable.com/shrmWYjM3NRIhrv66" target="_blank" class="footer-link">Report a bug</a><a href="/product" class="footer-link">Owner&#x27;s manual</a><a href="/faq" class="footer-link">FAQ</a>
+                </div>
+                <div id="w-node-f07a5ee2-8d85-9972-98a4-8aef496868e9-fd67dc0e">
+                    <h3 class="footer-heading">Legal</h3><a href="/legal#imprint" class="footer-link">Imprint</a><a href="/legal#privacy_policy" class="footer-link">Privacy Policy</a><a href="/privacy-and-tracking" class="footer-link">Privacy &amp; Tracking</a><a href="/legal#terms_and_conditions" class="footer-link">Terms &amp; Conditions</a>
+                </div>
+                <div id="w-node-c8188fa9-9054-c9f9-52d9-31a0fd67dc2f-fd67dc0e" class="footer-community-links">
+                    <h3 class="footer-heading">Social</h3><a href="https://twitter.com/your__centrol" target="_blank" class="footer-link">Twitter</a><a href="https://www.linkedin.com/company/centrol-gmbh/" target="_blank" class="footer-link">LinkedIn</a><a href="https://www.instagram.com/your___centrol/" target="_blank" class="footer-link">Instagram</a><a href="https://t.co/b8hjBV3568?amp=1" class="footer-link">Spotify</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="paragraph-narrow">
+                <p id="newsletter" class="footer-heading">Newsletter</p>
+                <div class="w-form">
+                    <form id="wf-newsletter-email-form" name="email-form" data-name="Email Form" action="https://yourcentrol.us18.list-manage.com/subscribe/post?u=49d9b45b794e405fe6335b24e&amp;amp;id=9611fe2c36" method="post">
+                        <div class="box-flex"><input type="email" class="textfield newsletter w-input" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="your@email.com" id="EMAIL-4" required="" /><input type="submit" value="Subscribe" data-wait="Please wait..." class="button newsletter w-button" /></div>
+                    </form>
+                    <div class="success-box w-form-done">
+                        <div class="success-label">Thank you for subscribing!<br />We&#x27;ll send you the next issue as soon as it
+                            is out.</div>
+                    </div>
+                    <div class="error-box w-form-fail">
+                        <div class="error-label">Something went wrong while submitting the form.<br />Please try again.</div>
+                    </div>
+                    <p class="note">Get monthly product updates &amp; see what inspires us.<br />Not quite sure? Check out a <a href="https://mailchi.mp/5ad9fbb7b65d/an-update-from-centrol-a-team-reunion" class="link-subtle link-discreet">past issue</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=59c3a820387ac60001b24d4d" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+    <script src="https://centrol-io.github.io/common-scripts/site_scripts.js" type="text/javascript">
+    </script>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+    <script>
+        function iOS() {
+            return [
+                    'iPad Simulator',
+                    'iPhone Simulator',
+                    'iPod Simulator',
+                    'iPad',
+                    'iPhone',
+                    'iPod'
+                ].includes(navigator.platform)
+                // iPad on iOS 13 detection
+                ||
+                (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        }
+
+        var ua = navigator.userAgent.toLowerCase();
+        var isAndroid = ua.indexOf("android") > -1;
+
+        if (isAndroid || iOS()) {
+            document.body.classList.add('touch-device');
+        }
+    </script><!-- Typed effect  -->
+    <script>
+        var SideEditor = SideEditor || [];
+        SideEditor.push(function() {
+            $.getScript('https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js', function() {
+
+                var lineDelay = "^400";
+                $(".centrol-app--typed-home").typed({
+                    strings: ["The email client that helps you focus.<br/><br/>" + lineDelay +
+                        "Email batched and delivered when you want it." + lineDelay +
+                        " Sort through new email in one go." + lineDelay +
+                        " Mark what's important and get rid of the rest." + lineDelay +
+                        " Focus Mode for calm, distraction-free communication.<br/><br/>" + lineDelay +
+                        "Built with love. Designed with purpose."
+                    ],
+
+                    //"Get your new mail delivered a few scheduled times a day and sort through it.<br>^" + lineDelay + "<br>" +
+                    //"Some more explanation of the conceptSome more explanation of the concept Some more explanation of the concept Some more explanation of the concept.<br>^" + lineDelay + "<br>" +
+                    //"We think think you’re going to love it."],
+                    typeSpeed: -20,
+                    startDelay: 1500,
+                    showCursor: true,
+                    loop: false,
+                });
+            });
+        });
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLBWCW5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Auto-typing text -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+        var typed4 = new Typed('.typed-text', {
+            strings: ['living life', 'working out', 'in class', 'shopping', 'studying', 'in meetings', 'working'],
+            typeSpeed: 75,
+            backSpeed: 20,
+            bindInputFocusEvents: true,
+            loop: true,
+            showCursor: false,
+            backDelay: 1100,
+            startDelay: 1000
+        });
+    </script>
+
+</body></html>
