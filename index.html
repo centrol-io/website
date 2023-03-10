@@ -1,94 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Centrol | Custom Educational Content and Curriculum</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="/" class="nav__logo">
+          <img src="img/logo.svg" alt="Logo" />
+        </a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centrol | Custom-tailored Educational Content and Curriculum Platform</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-    <!-- Header section -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#about">About</a>
-                <a href="#features">Features</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <a href="/">
-                <img src="img/logo.png" alt="Custom-tailored Educational Content and Curriculum Platform">
-            </a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
         </div>
+
+        <div class="nav__toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
-    <!-- Hero section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Welcome to the future of personalized learning</h1>
-            <p>Our platform offers custom-tailored educational content and curriculum designed specifically for business
-                people and consultants looking to upskill for specific client projects and tasks.</p>
-            <a href="#signup" class="btn">Sign up now</a>
-        </div>
+    <section class="hero container">
+      <div class="hero__content">
+        <h1 class="hero__title">Centrol</h1>
+        <p class="hero__text">Upgrade your team's skills with our tailored educational content.</p>
+        <a href="#" class="btn btn--primary">Get Started</a>
+      </div>
+      <div class="hero__image">
+        <img src="img/hero-image.png" alt="Hero Image" />
+      </div>
     </section>
 
-    <!-- About section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About us</h2>
-            <p>Our platform uses state-of-the-art AI technology to personalize your learning experience and provide you
-                with the most relevant and effective educational materials.</p>
-            <a href="#signup" class="btn">Sign up now</a>
+    <section class="features container">
+      <div class="feature animate-opacity">
+        <div class="feature__icon">
+          <i class="fas fa-chalkboard-teacher"></i>
         </div>
+        <h2 class="feature__title">Tailored Curriculum</h2>
+        <p class="feature__text">Our expert team creates custom educational content tailored to your team's specific needs and goals.</p>
+      </div>
+      <div class="feature animate-opacity">
+        <div class="feature__icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h2 class="feature__title">Team Building</h2>
+        <p class="feature__text">Our educational content and curriculum helps build stronger teams, improving communication and collaboration.</p>
+      </div>
+      <div class="feature animate-opacity">
+        <div class="feature__icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h2 class="feature__title">Innovative Approach</h2>
+        <p class="feature__text">Our innovative approach to educational content creation ensures that your team is learning the most up-to-date information and techniques.</p>
+      </div>
     </section>
 
-    <!-- Features section -->
-    <section class="features" id="features">
-        <div class="container">
-            <h2>Features</h2>
-            <ul>
-                <li>Custom-tailored educational content and curriculum</li>
-                <li>Personalized learning experience using AI technology</li>
-                <li>Access to a variety of content formats, including video, audio, and written material</li>
-                <li>Carefully curated educational materials by our team of experts</li>
-                <li>Constantly updated content to ensure the latest knowledge and skills</li>
-            </ul>
-            <a href="#signup" class="btn">Sign up now</a>
+    <section class="video container">
+      <div class="video__player">
+        <video src="img/video.mp4"></video>
+        <div class="play-button">
+          <i class="fas fa-play"></i>
         </div>
-    </section>
-
-    <!-- Pricing section -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <h2>Pricing</h2>
-            <ul>
-                <li>Basic plan: $29/month</li>
-                <li>Standard plan: $49/month</li>
-                <li>Premium plan: $99/month</li>
-            </ul>
-            <a href="#signup" class="btn">Sign up now</a>
-        </div>
+      </div>
     </section>
 
     <!-- Contact section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Contact us</h2>
-            <p>Got a question or comment? Drop us a line!</p>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
+    <section class="section-contact">
+        <div class="row">
+            <h2 class="heading-secondary">Contact Us</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input type="tel" name="phone" id="phone" placeholder="Your Phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col span-1-of-2">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186178.57132815843!2d-73.99419087152077!3d40.740154879558885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xcdfd5d5e5a5a872!2sApple%20Store!5e0!3m2!1sen!2sus!4v1646891291604!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
         </div>
     </section>
 
