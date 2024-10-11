@@ -3,18 +3,32 @@ import Link from 'next/link'
 import { ChevronRight, Home, Shield, Zap, Cog, Star } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import emailjs from 'emailjs-com';
+import Image from 'next/image'
 
 export default function HomePage() {
-  const [email, setEmail] = useState('')
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log('Consultation requested for:', email)
-    setEmail('')
-  }
+    e.preventDefault();
+    console.log('Consultation requested for:', email);
 
-  const currentYear = new Date().getFullYear()
+    // Send email using EmailJS
+    emailjs.send('service_2657mv3', 'template_4vfh0lu', {
+      name,
+      email
+    })
+    .then((response) => {
+      console.log('Email sent successfully:', response.status, response.text);
+    })
+    .catch((error) => {
+      console.error('Error sending email:', error);
+    });
+
+    setName('');
+    setEmail('');
+  }
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -87,19 +101,22 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  name: "Sarah Johnson",
-                  role: "Homeowner",
-                  testimonial: "Centrol.io transformed our house into a smart oasis. The convenience and energy savings are incredible!",
+                  name: "Nathan S.",
+                  role: "Entrepreneur",
+                  testimonial: "Centrol.io transformed our house into a smart oasis. The convenience and time savings are incredible!",
+                  image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
-                  name: "Michael Chen",
-                  role: "Tech Enthusiast",
-                  testimonial: "As someone who loves technology, I'm impressed by the seamless integration and cutting-edge solutions Centrol.io provided.",
+                  name: "Lana L.",
+                  role: "New Smart Home Owner",
+                  testimonial: "I don't want to think about my technology, I like to just live with it seamlessly. Centrol did that for me.",
+                  image: "https://plus.unsplash.com/premium_photo-1688572454849-4348982edf7d?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
-                  name: "Emma Rodriguez",
+                  name: "Emanuel R.",
                   role: "Busy Professional",
                   testimonial: "The home automation features have made my life so much easier. I can't imagine living without my smart home now!",
+                  image: "https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
               ].map((testimonial, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-md">
@@ -108,6 +125,7 @@ export default function HomePage() {
                     <div>
                       <h4 className="font-semibold">{testimonial.name}</h4>
                       <p className="text-gray-600">{testimonial.role}</p>
+                      <Image src={testimonial.image} alt={testimonial.name} width={48} height={48} className="rounded-full" />
                     </div>
                   </div>
                   <p className="text-gray-700 mb-4">"{testimonial.testimonial}"</p>
@@ -176,7 +194,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-            <p>&copy; {currentYear} Centrol.io. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Centrol.io. All rights reserved.</p>
           </div>
         </div>
       </footer>

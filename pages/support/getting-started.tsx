@@ -79,7 +79,7 @@ export default function GettingStartedPage() {
 
       <footer className="bg-gray-800 text-white py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; {currentYear} Centrol.io. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Centrol.io. All rights reserved.</p>
         </div>
       </footer>
     </div>
