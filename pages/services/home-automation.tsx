@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 const features = [
   { icon: Smartphone, title: 'Mobile Control', description: 'Control your entire home from your smartphone or tablet.' },
   { icon: Lightbulb, title: 'Smart Lighting', description: 'Automate and customize your home lighting for any mood or occasion.' },
-  { icon: Thermometer, title: 'Climate Control', description: 'Optimize your home's temperature for comfort and energy efficiency.' },
+  { icon: Thermometer, title: 'Climate Control', description: "Optimize your home's temperature for comfort and energy efficiency." },
   { icon: Speaker, title: 'Voice Commands', description: 'Control your home with simple voice commands using popular AI assistants.' },
 ]
 

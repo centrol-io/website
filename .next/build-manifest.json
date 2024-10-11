@@ -1,0 +1,119 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-42372ed130431b0a.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/5vjQiNaUHbeWZo6osx4Xf/_buildManifest.js",
+    "static/5vjQiNaUHbeWZo6osx4Xf/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/index-1a60e568a3d7b642.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/css/d7c2bb9a8bd0e47d.css",
+      "static/chunks/pages/_app-301076f909f3a9e7.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/pages/_error-7a92967bea80186d.js"
+    ],
+    "/about": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/about-37bfe60a0cf3e995.js"
+    ],
+    "/contact": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/contact-6d5b6b0dacb2441a.js"
+    ],
+    "/portfolio": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/portfolio-64abb27520dc26aa.js"
+    ],
+    "/services": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/services-a4c086041473c25c.js"
+    ],
+    "/services/custom-installations": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/services/custom-installations-a78f1011a92f8c4f.js"
+    ],
+    "/services/energy-management": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/services/energy-management-3a3a4885304acc59.js"
+    ],
+    "/services/home-automation": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/services/home-automation-a5a105cf94ff9843.js"
+    ],
+    "/services/security-systems": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/services/security-systems-60ef9a0be3524af4.js"
+    ],
+    "/support": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/support-d33b9e5a5c3dd121.js"
+    ],
+    "/support/getting-started": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/support/getting-started-181762ae9ca7231e.js"
+    ],
+    "/support/home-automation": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/support/home-automation-14d6830b25d1b09b.js"
+    ],
+    "/support/security-systems": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-64ad27b21261a9ce.js",
+      "static/chunks/main-9f5a69a7cc5beb93.js",
+      "static/chunks/241-5a2bcc96e7d78152.js",
+      "static/chunks/pages/support/security-systems-b54f67bed0afff92.js"
+    ]
+  },
+  "ampFirstPages": []
+}
