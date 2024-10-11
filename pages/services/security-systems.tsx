@@ -3,10 +3,10 @@ import { Shield, Camera, Lock, Bell, Smartphone, ChevronRight } from 'lucide-rea
 import { Button } from "@/components/ui/button"
 
 const features = [
-  { icon: Camera, title: 'Smart Cameras', description: 'High-definition cameras with motion detection and night vision capabilities.' },
-  { icon: Lock, title: 'Smart Locks', description: 'Keyless entry systems with remote control and temporary access codes.' },
-  { icon: Bell, title: 'Alarm Systems', description: 'Advanced alarm systems with instant notifications and professional monitoring.' },
-  { icon: Smartphone, title: 'Mobile Monitoring', description: 'Monitor and control your security system from anywhere using your smartphone.' },
+  { icon: Camera, title: 'Smart Cameras', description: 'AI-powered cameras with 4K resolution, night vision, and intelligent motion detection to monitor your property 24/7.' },
+  { icon: Lock, title: 'Smart Locks', description: 'Secure, keyless entry systems with biometric options, temporary access codes, and remote locking capabilities.' },
+  { icon: Bell, title: 'Advanced Alarms', description: 'Multi-sensor alarm systems with instant mobile alerts, professional monitoring, and smart home integration.' },
+  { icon: Smartphone, title: 'Mobile Control', description: 'Monitor, arm, and control your entire security system from anywhere using our intuitive mobile app.' },
 ]
 
 export default function SecuritySystemsPage() {
@@ -33,8 +33,8 @@ export default function SecuritySystemsPage() {
 
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Security Systems Services</h1>
-          <p className="text-xl text-gray-600 mb-12">Protect your home and loved ones with our state-of-the-art security systems, designed to provide peace of mind and unparalleled protection.</p>
+          <h1 className="text-4xl font-bold mb-6">State-of-the-Art Security Systems</h1>
+          <p className="text-xl text-gray-600 mb-12">Safeguard your home and loved ones with our advanced security solutions. Our systems combine cutting-edge technology with user-friendly interfaces to provide unparalleled protection and peace of mind.</p>
 
           <div className="grid gap-8 mb-12">
             {features.map((feature, index) => (
@@ -50,22 +50,23 @@ export default function SecuritySystemsPage() {
             ))}
           </div>
 
-          <h2 className="text-2xl font-bold mb-4">Our Security Process</h2>
+          <h2 className="text-2xl font-bold mb-4">Our Comprehensive Security Approach</h2>
           <ol className="list-decimal list-inside space-y-4 mb-12">
-            <li className="text-gray-700">Comprehensive security assessment of your property.</li>
-            <li className="text-gray-700">Customized security plan tailored to your specific needs and concerns.</li>
-            <li className="text-gray-700">Professional installation of cutting-edge security devices and systems.</li>
-            <li className="text-gray-700">Integration with your existing smart home setup for seamless control.</li>
-            <li className="text-gray-700">Thorough training on system usage and best practices for home security.</li>
-            <li className="text-gray-700">24/7 monitoring and support to ensure your system is always functioning optimally.</li>
+            <li className="text-gray-700">In-depth security assessment of your property to identify vulnerabilities.</li>
+            <li className="text-gray-700">Custom security plan design, addressing your specific concerns and lifestyle.</li>
+            <li className="text-gray-700">Professional installation of high-grade security devices and systems.</li>
+            <li className="text-gray-700">Seamless integration with your existing smart home setup for unified control.</li>
+            <li className="text-gray-700">Thorough training on system operation, mobile app usage, and security best practices.</li>
+            <li className="text-gray-700">24/7 professional monitoring and rapid response protocols for emergencies.</li>
+            <li className="text-gray-700">Regular system updates and maintenance to stay ahead of evolving security threats.</li>
           </ol>
 
           <div className="bg-blue-500 text-white rounded-lg p-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">Secure Your Home Today</h2>
-            <p className="text-xl mb-6">Take the first step towards a safer, more secure living environment.</p>
+            <h2 className="text-3xl font-bold mb-4">Protect What Matters Most</h2>
+            <p className="text-xl mb-6">Invest in the safety and security of your home and family with our advanced security solutions.</p>
             <Button asChild variant="secondary">
               <Link href="/contact">
-                Get a Security Consultation <ChevronRight className="w-4 h-4 ml-2" />
+                Book Your Security Consultation <ChevronRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
           </div>

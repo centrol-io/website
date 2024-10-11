@@ -3,10 +3,10 @@ import { Zap, Lightbulb, Thermometer, BarChart, Sun, ChevronRight } from 'lucide
 import { Button } from "@/components/ui/button"
 
 const features = [
-  { icon: Lightbulb, title: 'Smart Lighting', description: 'Energy-efficient LED lighting with automated schedules and dimming capabilities.' },
-  { icon: Thermometer, title: 'Smart Thermostats', description: 'AI-powered climate control that learns your preferences and optimizes energy usage.' },
-  { icon: BarChart, title: 'Energy Monitoring', description: 'Real-time energy consumption tracking and detailed usage reports.' },
-  { icon: Sun, title: 'Solar Integration', description: 'Seamless integration with solar panel systems for renewable energy management.' },
+  { icon: Lightbulb, title: 'Smart Lighting', description: 'Energy-efficient LED lighting with automated schedules, occupancy sensing, and daylight harvesting to minimize energy waste.' },
+  { icon: Thermometer, title: 'Intelligent HVAC', description: 'AI-powered climate control that learns your preferences, optimizes for energy efficiency, and integrates with weather forecasts.' },
+  { icon: BarChart, title: 'Real-time Monitoring', description: 'Detailed energy consumption tracking with appliance-level insights and personalized saving recommendations.' },
+  { icon: Sun, title: 'Solar Integration', description: 'Seamless integration with solar panel systems, including battery storage management and grid export optimization.' },
 ]
 
 export default function EnergyManagementPage() {
@@ -33,8 +33,8 @@ export default function EnergyManagementPage() {
 
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Energy Management Services</h1>
-          <p className="text-xl text-gray-600 mb-12">Optimize your home's energy consumption, reduce your carbon footprint, and save on utility bills with our intelligent energy management solutions.</p>
+          <h1 className="text-4xl font-bold mb-6">Smart Energy Management Solutions</h1>
+          <p className="text-xl text-gray-600 mb-12">Revolutionize your home's energy efficiency with our cutting-edge management systems. Reduce your carbon footprint, lower utility bills, and enjoy a more sustainable lifestyle without sacrificing comfort.</p>
 
           <div className="grid gap-8 mb-12">
             {features.map((feature, index) => (
@@ -52,20 +52,21 @@ export default function EnergyManagementPage() {
 
           <h2 className="text-2xl font-bold mb-4">Our Energy Optimization Process</h2>
           <ol className="list-decimal list-inside space-y-4 mb-12">
-            <li className="text-gray-700">Comprehensive energy audit of your home to identify inefficiencies.</li>
-            <li className="text-gray-700">Custom energy management plan tailored to your usage patterns and goals.</li>
-            <li className="text-gray-700">Installation of smart energy devices and management systems.</li>
-            <li className="text-gray-700">Integration with your existing smart home ecosystem for centralized control.</li>
-            <li className="text-gray-700">Detailed training on using the energy management dashboard and features.</li>
+            <li className="text-gray-700">Comprehensive energy audit to identify inefficiencies and opportunities for improvement.</li>
+            <li className="text-gray-700">Customized energy management plan tailored to your home's unique characteristics and your lifestyle.</li>
+            <li className="text-gray-700">Installation of smart energy devices, including advanced meters and IoT-enabled appliances.</li>
+            <li className="text-gray-700">Integration with your existing smart home ecosystem for centralized control and automation.</li>
+            <li className="text-gray-700">Setup of an intuitive energy management dashboard with real-time insights and controls.</li>
+            <li className="text-gray-700">Personalized training on using the system and implementing energy-saving strategies.</li>
             <li className="text-gray-700">Ongoing support and periodic system optimization to maximize energy savings.</li>
           </ol>
 
           <div className="bg-blue-500 text-white rounded-lg p-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">Start Saving Energy Today</h2>
-            <p className="text-xl mb-6">Take control of your energy consumption and reduce your environmental impact.</p>
+            <h2 className="text-3xl font-bold mb-4">Embrace Sustainable Living</h2>
+            <p className="text-xl mb-6">Take control of your energy consumption, reduce costs, and contribute to a greener future.</p>
             <Button asChild variant="secondary">
               <Link href="/contact">
-                Schedule an Energy Audit <ChevronRight className="w-4 h-4 ml-2" />
+                Schedule Your Energy Consultation <ChevronRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
           </div>

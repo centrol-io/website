@@ -33,11 +33,12 @@ export default function ContactPage() {
       </header>
 
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Get in Touch</h1>
         
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
+            <h2 className="text-2xl font-semibold mb-6">We're Here to Help</h2>
+            <p className="text-gray-600 mb-6">Have questions about our smart home solutions? Ready to start your project? Or just want to learn more? We're eager to hear from you and help bring your smart home vision to life.</p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Label htmlFor="name">Name</Label>
@@ -49,32 +50,29 @@ export default function ContactPage() {
               </div>
               <div>
                 <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="How can we help you?" required />
+                <Textarea id="message" placeholder="Tell us about your smart home needs or any questions you have" required />
               </div>
               <Button type="submit">Send Message</Button>
             </form>
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <MapPin className="w-6 h-6 text-blue-500 mr-4 mt-1" />
-                <p>123 Smart Home Avenue, Tech City, TC 12345</p>
-              </div>
+            <div className="space-y-4 mb-8">
               <div className="flex items-center">
                 <Phone className="w-6 h-6 text-blue-500 mr-4" />
-                <p>(123) 456-7890</p>
-              </div>
+                <p>(917) 915-1374</p>
+                </div>
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-blue-500 mr-4" />
                 <p>info@centrol.io</p>
               </div>
             </div>
-            <div className="mt-8">
-              <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
-              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-              <p>Saturday: 10:00 AM - 4:00 PM</p>
-              <p>Sunday: Closed</p>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Schedule a Consultation</h3>
+              <p className="text-gray-600 mb-4">Want to discuss your smart home project in person? Schedule a free consultation with one of our experts.</p>
+              <Button asChild>
+                <Link href="/schedule">Book a Consultation</Link>
+              </Button>
             </div>
           </div>
         </div>

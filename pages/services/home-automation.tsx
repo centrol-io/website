@@ -3,10 +3,10 @@ import { Home, Smartphone, Lightbulb, Thermometer, Speaker, ChevronRight } from 
 import { Button } from "@/components/ui/button"
 
 const features = [
-  { icon: Smartphone, title: 'Mobile Control', description: 'Control your entire home from your smartphone or tablet.' },
-  { icon: Lightbulb, title: 'Smart Lighting', description: 'Automate and customize your home lighting for any mood or occasion.' },
-  { icon: Thermometer, title: 'Climate Control', description: "Optimize your home's temperature for comfort and energy efficiency." },
-  { icon: Speaker, title: 'Voice Commands', description: 'Control your home with simple voice commands using popular AI assistants.' },
+  { icon: Smartphone, title: 'Mobile Control', description: 'Control your entire home from anywhere with our intuitive mobile app.' },
+  { icon: Lightbulb, title: 'Smart Lighting', description: 'Create perfect ambiance and save energy with automated, customizable lighting.' },
+  { icon: Thermometer, title: 'Climate Control', description: 'Maintain ideal temperatures and reduce energy costs with AI-powered climate management.' },
+  { icon: Speaker, title: 'Voice Commands', description: 'Effortlessly control your home with voice commands through popular AI assistants.' },
 ]
 
 export default function HomeAutomationPage() {
@@ -34,7 +34,7 @@ export default function HomeAutomationPage() {
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-6">Home Automation Services</h1>
-          <p className="text-xl text-gray-600 mb-12">Transform your living space into a smart, efficient, and comfortable environment with our cutting-edge home automation solutions.</p>
+          <p className="text-xl text-gray-600 mb-12">Experience the future of living with our cutting-edge home automation solutions. Transform your house into a smart, efficient, and responsive home that adapts to your lifestyle.</p>
 
           <div className="grid gap-8 mb-12">
             {features.map((feature, index) => (
@@ -50,22 +50,22 @@ export default function HomeAutomationPage() {
             ))}
           </div>
 
-          <h2 className="text-2xl font-bold mb-4">How It Works</h2>
+          <h2 className="text-2xl font-bold mb-4">Our Home Automation Process</h2>
           <ol className="list-decimal list-inside space-y-4 mb-12">
-            <li className="text-gray-700">Schedule a consultation with our smart home experts.</li>
-            <li className="text-gray-700">We assess your home and discuss your automation needs and preferences.</li>
-            <li className="text-gray-700">Our team designs a custom home automation plan tailored to your lifestyle.</li>
-            <li className="text-gray-700">Professional installation of smart devices and systems throughout your home.</li>
-            <li className="text-gray-700">We provide training on how to use and maximize your new smart home features.</li>
-            <li className="text-gray-700">Enjoy ongoing support and maintenance to keep your smart home running smoothly.</li>
+            <li className="text-gray-700">Comprehensive consultation to understand your lifestyle and preferences.</li>
+            <li className="text-gray-700">Custom design of your smart home ecosystem tailored to your needs.</li>
+            <li className="text-gray-700">Professional installation of state-of-the-art smart devices and systems.</li>
+            <li className="text-gray-700">Seamless integration of all components for a unified smart home experience.</li>
+            <li className="text-gray-700">Personalized training to help you master your new smart home features.</li>
+            <li className="text-gray-700">Ongoing support and updates to ensure your system evolves with technology.</li>
           </ol>
 
           <div className="bg-blue-500 text-white rounded-lg p-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Automate Your Home?</h2>
-            <p className="text-xl mb-6">Take the first step towards a smarter, more efficient living space.</p>
+            <h2 className="text-3xl font-bold mb-4">Ready to Upgrade Your Living Experience?</h2>
+            <p className="text-xl mb-6">Take the first step towards a smarter, more comfortable, and efficient home.</p>
             <Button asChild variant="secondary">
               <Link href="/contact">
-                Schedule a Consultation <ChevronRight className="w-4 h-4 ml-2" />
+                Schedule Your Consultation <ChevronRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
           </div>

@@ -13,6 +13,9 @@ const supportGuides = [
 ]
 
 export default function SupportPage() {
+
+  const currentYear = new Date().getFullYear()
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm">
@@ -69,7 +72,7 @@ export default function SupportPage() {
 
       <footer className="bg-gray-800 text-white py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 Centrol.io. All rights reserved.</p>
+          <p>&copy; {currentYear} Centrol.io. All rights reserved.</p>
         </div>
       </footer>
     </div>
