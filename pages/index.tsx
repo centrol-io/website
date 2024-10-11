@@ -121,11 +121,12 @@ export default function HomePage() {
               ].map((testimonial, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-md">
                   <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                    <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 overflow-hidden">
+                      <Image src={testimonial.image} alt={testimonial.name} width={48} height={48} className="rounded-full" />
+                    </div>
                     <div>
                       <h4 className="font-semibold">{testimonial.name}</h4>
                       <p className="text-gray-600">{testimonial.role}</p>
-                      <Image src={testimonial.image} alt={testimonial.name} width={48} height={48} className="rounded-full" />
                     </div>
                   </div>
                   <p className="text-gray-700 mb-4">"{testimonial.testimonial}"</p>
@@ -181,8 +182,7 @@ export default function HomePage() {
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-              <p className="text-gray-400">123 Smart Street, Tech City, 12345</p>
-              <p className="text-gray-400">Phone: (123) 456-7890</p>
+              <p className="text-gray-400">Phone: (917) 915-1374</p>
               <p className="text-gray-400">Email: info@centrol.io</p>
             </div>
             <div>
