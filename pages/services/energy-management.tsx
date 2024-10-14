@@ -15,17 +15,17 @@ export default function EnergyManagementPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="bg-white shadow-sm">
+      <header className="bg-background shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-gray-800">Centrol<span className="text-blue-500">.io</span></Link>
+          <Link href="/" className="text-2xl font-bold text-foreground">Centrol<span className="text-primary">.io</span></Link>
           <nav className="hidden md:flex space-x-6">
-            <Link href="/" className="text-gray-600 hover:text-blue-500 transition-colors">Home</Link>
-            <Link href="/services" className="text-blue-500 font-semibold">Services</Link>
-            <Link href="/portfolio" className="text-gray-600 hover:text-blue-500 transition-colors">Portfolio</Link>
-            <Link href="/about" className="text-gray-600 hover:text-blue-500 transition-colors">About</Link>
-            <Link href="/contact" className="text-gray-600 hover:text-blue-500 transition-colors">Contact</Link>
+            <Link href="/" className="text-foreground hover:text-primary transition-colors">Home</Link>
+            <Link href="/services" className="text-foreground hover:text-primary transition-colors">Services</Link>
+            <Link href="/portfolio" className="text-foreground hover:text-primary transition-colors">Portfolio</Link>
+            <Link href="/about" className="text-foreground hover:text-primary transition-colors">About</Link>
+            <Link href="/contact" className="text-foreground hover:text-primary transition-colors">Contact</Link>
           </nav>
-          <Button asChild>
+          <Button asChild className="bg-primary text-primary-foreground hover:bg-secondary">
             <Link href="/contact">Get Started</Link>
           </Button>
         </div>
