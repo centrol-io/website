@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import Head from 'next/head'
+import GoogleAnalytics from '../components/GoogleAnalytics'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <GoogleAnalytics />
       <Component {...pageProps} />
     </>
   )
