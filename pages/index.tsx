@@ -49,6 +49,14 @@ export default function HomePage() {
       </header>
 
       <main className="flex-grow">
+          {/* Google tag (gtag.js) */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBM67Z18KJ"></script>
+          <script dangerouslySetInnerHTML={{ __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PBM67Z18KJ');
+          ` }} />
         {/* Hero Section */}
         <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
           <video 
